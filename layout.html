@@ -1,0 +1,336 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rectangles</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet"  href="layout.css">
+	
+	<style type="text/css">
+		/*  các thuộc tính CSS đặt ở đây */
+
+	body {
+			font-size: 12px;
+		}
+
+		#container {
+			width: 1000px;
+			height: 800px;
+			margin: 0 auto;
+
+		}
+
+		#header {
+		    background-color:rgb(0, 115, 255);
+		    width: 100%;
+		    min-height: 100px;
+		}
+
+		#content {
+			background-color: blue;
+			width: 100%;
+		}
+
+		#footer {
+			width: 100%;
+			min-height: 100px;
+			background-color: orange;
+		}
+
+		#left-content {
+			background-color: #e68e09;
+			width: 30%;
+			float: right;
+			min-height: 700px;
+		}
+
+		#right-content {
+			background-color: whitesmoke;
+			width: 68%
+			float: left;
+			min-height: 700px;
+			padding-left: 20px;
+		}
+
+		.h-logo {
+			float: left;
+		}
+
+		#header-logo {
+			padding: 0 0px;
+		}
+
+		.product {
+			width: 200px;
+			height: 276px;
+			margin: 5px;
+			padding: 5px;
+			background-color: #ffffff;
+			float: left;
+		}
+
+		.product .text {
+			width: 90%;
+			text-align: center;
+		}
+
+		.product .p-name a{
+			cursor: pointer;
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		.product .p-price {
+			color: red;
+			font-weight: bold;
+		}
+
+		.product .p-img {
+			text-align: center;
+		}
+
+		#footer {
+			width: 100%;
+			height: 100px;
+			border-top: 1px solid rgb(231, 241, 243);
+		}
+
+		#btfooter {
+			text-align: center;
+		}
+
+		nav{
+			background-color: #ec9f47;
+		}
+		nav a{
+			display: inline-block;
+			padding: 10px;
+			font-size: 20px;
+			color: white;
+			text-decoration: none;	
+		}
+		nav a: hover{
+			background-color: #333;
+		}
+
+		#menu-d ul {
+         background: rgb(255, 123, 0);
+         width: 300px;
+         padding: 0;
+         list-style-type: none;
+         text-align: left;
+    }
+    #menu-d li {
+         width: auto;
+         height: 40px;
+         line-height: 40px;
+         border-bottom: 1px solid #e8e8e8;
+         padding: 0 1em;
+    }
+    #menu-d li a {
+         text-decoration: none;
+         color: #333;
+         font-weight: bold;
+         display: block;
+    }
+    #menu-d li:hover {
+     background: #CDE2CD; /* tạo hiệu ứng đổi màu khi rê chuột vào*/
+    }
+
+    #menu-d ul li {
+     position: relative;
+    }
+
+    #menu-d .sub-menu {
+         position: absolute;
+         left: 250px;
+         top: 0;
+         display: none;
+        }
+
+    #menu-d li:hover .sub-menu {
+         display: block;
+        }    
+
+	</style>
+
+</head>
+
+<body>
+
+<div id = "container">
+
+	<div id = "header">
+		<div id = "header-logo">
+			<a href = "https//trptdanang.fpt.edu.vn" class="h-logo">	
+				<img src = "R.jfif" width="100%" height="400" >
+			</a>
+			<h1 class = "h-logo">This is header</h1>
+			<div style = "clear:both"></div>
+		</div>
+
+        <ul class="hmenu">
+            <li><a href="https://www.dienmayxanh.com/">Trang chủ</a></li>
+            <li><a href="https://www.dienmayxanh.com/gioi-thieu">Giới thiệu</a></li>
+            <li><a href="3.html">Sản phẩm</a>
+            <ul class="sub-menu">
+                <li><a href="https://www.dienmayxanh.com/tu-lanh">Tủ lạnh</a></li>
+                <li><a href="https://www.dienmayxanh.com/tivi">Tivi</a></li>
+                <li><a href="https://www.dienmayxanh.com/quat-dieu-hoa">Quạt nước</a></li>
+                <li><a href="https://www.dienmayxanh.com/dieu-hoa">Điều hòa</a></li>
+                <li><a href="https://www.dienmayxanh.com/hoi-dap/may-lanh">Hỏi &amp; đáp</a></li>
+            </ul>
+            </li>
+            <li><a href="https://www.dienmayxanh.com/lien-he">Liên hệ & Góp ý</a></li>
+            <li><a href="6.html">Hỏi &amp; đáp</a></li>
+        </ul>
+		<div style="clear:both;"></div>
+	</div>
+
+    <div id="content">
+
+    	<div id="left-content">
+    		<h1>Danh mục</h1>
+    		<div id="menu-d">
+    <ul>
+        <li>
+            <a href="#">Điều hòa</a>
+        </li>
+        <li> <a href="#">Tủ lạnh</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Chống nước</a></li>
+                    <li><a href="#">Làm mát</a></li>
+                    <li><a href="#">Dây Cáp</a></li>
+                </ul>
+        </li>
+        <li><a href="#">Phụ Kiện</a></li>
+        <li><a href="#">Hàng Cũ</a></li>
+    </ul>
+</div>
+    	</div>
+
+
+    	<div id="right-content">
+
+    		<div id="products" >
+            	
+            	<div class="product">
+					    	<div class="text">
+								<div class="p-name"><a href="item.html">Quạt nước Mini</a></div>
+							</div>
+							<div class="p-img">
+								<img src="https://salt.tikicdn.com/cache/w1200/ts/product/d6/66/0e/9b56f104dff82df448002095f4e1ff9d.jpg" width="200" height="200">
+							</div>
+                    	   
+						<div class="text">
+							
+							<div class="p-cat" >DIGITAL Fan </div>
+							<div class="p-price" >Please Call  </div>
+							<input type="button" class="button" name="add" value="Add to cart">
+						</div>
+						<div class="clear"></div>
+				</div>
+            	<div class="product">
+					    	<div class="text">
+								<div class="p-name"><a href="item.html">Quạt nước công suất lớn</a></div>
+							</div>
+							<div class="p-img">
+								<img src="https://sunhouseviet.com/wp-content/uploads/2018/03/may-lam-mat-khong-khi-quat-dieu-hoa-sunhouse-shd7771.jpg" width="200" height="200">
+							</div>
+                    	   
+						<div class="text">
+							
+							<div class="p-cat" >DIGITAL Fan </div>
+							<div class="p-price" >Please Call  </div>
+							<input type="button" class="button" name="add" value="Add to cart">
+						</div>
+						<div class="clear"></div>
+				</div>
+            	<div class="product">
+					    	<div class="text">
+								<div class="p-name"><a href="item.html">Quạt hơi nước</a></div>
+							</div>
+							<div class="p-img">
+								<img src="https://cdn01.dienmaycholon.vn/filewebdmclnew/public/userupload/files/quat-hoi-nuoc-hang-nao-tot1.png" width="200" height="200">
+							</div>
+                    	   
+						<div class="text">
+							
+							<div class="p-cat" >DIGITAL Fan </div>
+							<div class="p-price" >Please Call  </div>
+							<input type="button" class="button" name="add" value="Add to cart">
+						</div>
+						<div class="clear"></div>
+				</div>
+            	<div class="product">
+                    <div class="text">
+                        <div class="p-name"><a href="item.html">Điều hòa một chiều</a></div>
+                    </div>
+                    <div class="p-img">
+                        <img src="https://dieuhoadaikin.vip/wp-content/uploads/Dieu-hoa-Daikin-FTKQ50-1.jpg" width="200" height="200">
+                    </div>
+                   
+                <div class="text">
+                    
+                    <div class="p-cat" >DIGITAL Air conditional </div>
+                    <div class="p-price" >Please Call  </div>
+                    <input type="button" class="button" name="add" value="Add to cart">
+                </div>
+                <div class="clear"></div>
+        </div>
+        <div class="product">
+                    <div class="text">
+                        <div class="p-name"><a href="item.html">Điều hòa hai chiều</a></div>
+                    </div>
+                    <div class="p-img">
+                        <img src="https://thongtinkythuat.com/wp-content/uploads/2021/11/dieu-hoa-2-chieu-la-gi-1.jpg" width="200" height="200">
+                    </div>
+                   
+                <div class="text">
+                    
+                    <div class="p-cat" >DIGITAL Air conditional </div>
+                    <div class="p-price" >Please Call  </div>
+                    <input type="button" class="button" name="add" value="Add to cart">
+                </div>
+                <div class="clear"></div>
+        </div>
+        <div class="product">
+                    <div class="text">
+                        <div class="p-name"><a href="item.html">Quạt thường</a></div>
+                    </div>
+                    <div class="p-img">
+                        <img src="https://cdn.tgdd.vn/Products/Images/1992/268453/lung-senko-lts1636--600x600.jpg" width="200" height="200">
+                    </div>
+                   
+                <div class="text">
+                    
+                    <div class="p-cat" >DIGITAL Fan </div>
+                    <div class="p-price" >Please Call  </div>
+                    <input type="button" class="button" name="add" value="Add to cart">
+                </div>
+                <div class="clear"></div>
+        </div>
+       
+				<!------------Không paste code product sau dòng này------------------------------------>
+					<div style="clear:both"></div>
+            </div>	    	
+    	</div>
+    	<div style = "clear:both"></div>
+    </div>
+
+	<div id = "footer"> 
+ 		<div id = "btfooter">
+ 			Điện máy Đà nẵng<br>
+ 			|
+ 			<a href="index.html#">Products</a>
+ 			|
+ 			<a href="index.html#">Service</a>
+ 			|
+ 			<a href="indec.html#">About Us</a>
+ 			|
+ 		</div>
+	</div>
+</div>
+
+</body>
+</html>
